@@ -1,0 +1,7 @@
+Acronyms
+
+JRE -Java Runtime Environment (enables javacode execution)
+JDK -Java Development Kit (Provides tools required to create java apps)
+IDE -Integrated Devlopment Environment (Edits, builds, runs, degus code (i.e. IntelliJ))
+
+
