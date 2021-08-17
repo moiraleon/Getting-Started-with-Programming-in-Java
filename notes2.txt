@@ -178,5 +178,67 @@ indicate by using switch() with variable you want to work on within the parentha
 
 at end of switch statment we dont use else, we use default;
 
+-------------------------------------------------------------------------------------------------
+Loops & Arrays
+
+Types
+
+While Loop -basic loop, condition check at beginning;
+
+while(condition)
+    statement;
+
+Do-While Loop - looping with deferred conditon check(checks condition at end)continues to cycle results from intitial value to looped result until it no longer falls within the condiiton i.e. keeps runnning while value i <35, then exits loop;
+always runs the body of the loop once because it wont stop until it doesnt qualify the condition, ie val 80 stop when val<20 only runs once;
+do
+    statement;
+while(condition);
+OR
+do{
+    statement;
+
+}while(condition);
+i.e 
+int i =1;
+while(i<100){
+    System.out.println(i);
+    i*=2;
+}
 
 
+For Loop - lopping with simplified notations for common use cases
+
+for(initialize;condition;update) i.e. for(i=1;i<100;i*=2)
+                                        System.out.println(i);System.out.println(i);
+or
+for(conditon){
+    statement;
+}
+
+For each Loop 
+
+
+Array
+type[] name
+float[] theVals
+
+creating the array uses new key word
+float[] theVals = new float[3];
+
+or declare;
+float[] theVals = {10.0f,20.0f,30.0f};
+
+(3 indicates the amount of Elements we want the array to have, In this case this array has three elements);
+0 based index System;
+theVals [0] =10.0f;
+etc;
+
+loop through array;
+for(int index =0; index<array.length; index++);
+sub name of array;
+
+
+
+for each  loop to sum up all vlaue sin an array;
+for(float currentVal: theVals)
+sum+=currentVal;
