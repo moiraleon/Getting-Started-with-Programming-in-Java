@@ -1,0 +1,46 @@
+Java Syntax
+
+made of statements, all must end in a semicolon ;
+Whitespace does not affect the statements behavior;
+
+
+Comments
+
+java supports line comments (//), which ignored everything until the end of a line or reaches a new line character;
+java supports block comments(/*....*/) continues to ignore everything contained within the /*...*/ can be a clip of a line or multiple lines, cannot be nested within eachother because the new */ will be identified as the endpoint and the /* with be ignored within the block comment and there will be one without a pair;
+java supports javadoc comments (/**...*/) to the complier it is the same as the block comment, can be used to generate documentation, write documentation for our code directly in the source code;
+
+Packages
+we normally qualify our source files with a package name, they are for organization;
+
+Syntax
+all lowercase
+reverse domain name notation To assure global uniqueness
+
+i.e.
+
+package com.pluralsight.example;
+
+||.sales
+||.sales.management
+||.marketing
+||.marketing.ohio
+||.management.ohio
+
+etc
+//code below
+
+in code example--
+
+package com.pluralsight.example;
+public class Main {
+
+    public static void main(String[] args) {
+	System.out.println("First line from app");
+	System.out.println("Second line from app");
+	System.out.println("Third line from app");
+    }
+}
+
+organizations source would be package com.pluralsight.example.main
+first folder accessed will be the src folder and then so on

@@ -42,4 +42,40 @@ public class Main {
     }
 }
 
+
 -------------------------------------------------------------------------------------------------
+
+Step 2 Running the command line 
+in IDE at top click edit-- copy path/reference -- absolute path
+/Users/moleon/IdeaProjects/FirstApp/src/Main.java
+ in terminal cd ~
+ cd IdeaProjects/FirstApp/out/production/FirstApp
+ run: ls see Main.class
+ run: java Main 
+    and the application runs (do not run: java Main.class)
+-------------------------------------------------------------------------------------------------
+
+Step 3 Locating the Java command
+
+to view envrionment variables go to terminal
+run: printenv
+PATH should contain path to where java execution file is located(if java command in step 2 ran then it is correct and this is just confirming or allowing you to make edits if necessary)
+
+-------------------------------------------------------------------------------------------------
+Step 4  Adding a base package
+
+when creating a project
+name: Organized 
+enter in base package input: com.pluralsight.organized (example package value) 
+
+When running application on command line with package name
+
+always copy path of class copy within out folder
+/Users/moleon/IdeaProjects/Organized/out/production/Organized/com/pluralsight/organized/Main.class
+
+run:cd IdeaProjects/Organized/out/production/Organized
+run: ls
+com
+run: java com.pluralsight.organized.Main
+We got organized!
+
