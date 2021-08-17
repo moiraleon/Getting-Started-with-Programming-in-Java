@@ -82,3 +82,9 @@ We got organized!
 -------------------------------------------------------------------------------------------------
 Objective - Variables, Data Types, and Math Operators
 
+Objective - Conditional Logic and Block Statements
+
+Step 5
+
+using intelliJ create  project called CalcEngine
+with base package of com.pluralsight.calcengine

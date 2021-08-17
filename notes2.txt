@@ -51,6 +51,9 @@ Variables - strongly typed
 
 data types must be declared 
 
+multiple variable can be set at the same time if same type
+    i.e. int a=2,b=10,c=30;
+
 i.e. 
 int dataValue;
 dataValue = 100;
@@ -98,4 +101,82 @@ integer -> to floating precision lost
 
 implicit conversion -widening, automatic;
 explicit conversion -use cast, we state what type of conversion;
+
+-------------------------------------------------------------------------------------------------
+
+Relational Operators
+ 
+>,>=,<,<=, ==,!=
+    'c'>'a' will result in true bc uniode points are being compared in length
+
+EX:
+int value1 =7;
+int value2 =6;
+int maxValue = value1 > value2 ? value1 : value2
+Displays
+value1 if true
+value2 if false
+
+
+-------------------------------------------------------------------------------------------------
+IF statement 
+an if statement only runs the one line of code that follows
+
+if(value1 > value2)
+    System.out.println("value 1 is bigger than value 2");
+else 
+    System.out.println("value 1 is not bigger than value 2");
+
+ELSE IF statements
+
+if(condition-1)
+    true-statement-1;
+else if (condition-2)
+    true-statement-2;
+    .
+    .
+    .
+else if (condition-n)
+    true-statement-n;
+else 
+    false-statement;
+
+-------------------------------------------------------------------------------------------------
+Logical Operators (STANDARD)
+
+& - and two true results;
+| - OR if one both sides result to true true|true, false|true, true|false;
+^ - exclusive or (XOR), if one side or other is true, but not both;
+! - negation, reverses the value, i.e. only a false end result with result in true;
+
+-------------------------------------------------------------------------------------------------
+
+Conditional Logical Operators (CONDITIONAL)
+only do enough work needed to determine the result
+only perform the right side of the operation when needed, if they get the result they need they will stop and return the value;
+
+&& - and, only runs right side if left side has shown to be true;
+|| - or, executtes right side only when left side is false;
+
+-------------------------------------------------------------------------------------------------
+Block Statements
+copile multiple lines of code with curly braces just as in all ther languages {};
+
+determines scope of variables;
+if (condition){
+
+}
+-------------------------------------------------------------------------------------------------
+Switch Statement
+
+run through and switch current value that applies with correct case statement and runs until break indicator that tells the code to jump out of th eswitch statement;
+
+only supports following primitive types: int (byte, int,short,long) and char data types;
+
+need break statements to help code to stop runnign once designated code has operated, else it will "fall through" -> run through all of the code;
+indicate by using switch() with variable you want to work on within the parenthasis;
+
+at end of switch statment we dont use else, we use default;
+
+
 
