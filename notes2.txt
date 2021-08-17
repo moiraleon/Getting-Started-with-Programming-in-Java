@@ -3,13 +3,13 @@ Java Syntax
 made of statements, all must end in a semicolon ;
 Whitespace does not affect the statements behavior;
 
-
+-------------------------------------------------------------------------------------------------
 Comments
 
 java supports line comments (//), which ignored everything until the end of a line or reaches a new line character;
 java supports block comments(/*....*/) continues to ignore everything contained within the /*...*/ can be a clip of a line or multiple lines, cannot be nested within eachother because the new */ will be identified as the endpoint and the /* with be ignored within the block comment and there will be one without a pair;
 java supports javadoc comments (/**...*/) to the complier it is the same as the block comment, can be used to generate documentation, write documentation for our code directly in the source code;
-
+-------------------------------------------------------------------------------------------------
 Packages
 we normally qualify our source files with a package name, they are for organization;
 
@@ -44,3 +44,58 @@ public class Main {
 
 organizations source would be package com.pluralsight.example.main
 first folder accessed will be the src folder and then so on
+
+-------------------------------------------------------------------------------------------------
+
+Variables - strongly typed
+
+data types must be declared 
+
+i.e. 
+int dataValue;
+dataValue = 100;
+
+or
+
+int myInfo = 200;
+
+variable names can not begin with a number or contain special characters aside from numbers and letters(no _ or 4me) use camelCase;
+variables can be set to other variables and made equal;
+variables can be set as constants in java with the word final;
+
+final int maxStudents = 25;
+
+Primitive Data Types
+integers - byte(8bits[-128,127]) short(16bits[-32768,32767]) int(32bits[-2bill,2bill]) long(64bits[really big numbers] written with L as eend of number i.e. 47759538958838595898558989358538595395358598L)
+floating - float(store decimal, values 32 bits, need to write 'f' after value i.e. 437587.988f) double(64 bits indicate with 'd' after value i.e. 47.69869999999d)
+character - stores unicode characters with \u followed by hex code that aren't on the keyboard i.e. '\u00DA'; //accented U, literal values between single quotes 'U',
+boolean- true/false
+
+each variables values are unrelated, when assigning One variable to another variable it copies that current variables value, as the second variable changes the first value does not because they are independent
+
+ arithmetic Operators
+ Basic – produce a result, no impact and values used in the operation(+-*/%);
+ Prefix/postfix - increase or decrease the value, replace original value(++,--) if operator is before the variable you get the result of that operation and the initial var is changed because it has been performed on, when the operator is after the variable you will get back the value prior to the operation but the initial vlaue was not performed on i.e ++5 = 5, 5 5++ = 5, 6; 
+ Compound assignment - operate on a value, replace original value -=, +=,;
+
+PEMDAS order 
+Postix, Prefix, Multiplicative, Additive
+everything operates left to right
+parenthasis take precedence
+
+cast operators can modify a data type
+
+long var = 10;
+short var = (short) 9;
+
+conversion completed
+parenthasis portion called a cast
+Conversion can have side effects
+
+nariowing (i.e.long->short) cuts out extra bits to make fit
+floating-> to integer fractional portion is discarder
+integer -> to floating precision lost
+
+implicit conversion -widening, automatic;
+explicit conversion -use cast, we state what type of conversion;
+

@@ -79,3 +79,6 @@ com
 run: java com.pluralsight.organized.Main
 We got organized!
 
+-------------------------------------------------------------------------------------------------
+Objective - Variables, Data Types, and Math Operators
+
